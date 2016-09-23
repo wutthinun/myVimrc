@@ -16,6 +16,7 @@ Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'kana/vim-arpeggio'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -33,6 +34,7 @@ nnoremap <CR> :noh<CR>
 :set backspace=2 " make backspace work like most other apps
 :set backspace=indent,eol,start
 let mapleader=" "
+:set nowrap
 
 call arpeggio#map('n', '', 0, 'df', '<c-w>')
 call arpeggio#map('i', '', 0, 'df', '<c-w>')
