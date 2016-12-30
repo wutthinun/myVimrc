@@ -1,3 +1,3 @@
 * ISTALLING
-	- Install [Vandle]( https://github.com/VundleVim/Vundle.vi://github.com/VundleVim/Vundle.vim )
+	- Install [Vandle](http://github.com/VundleVim/Vundle.Vim)
 	- Type: `:PluginInstall`
