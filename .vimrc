@@ -23,6 +23,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/supertab'
 Plugin 'yggdroot/indentline'
 Plugin 'leafgarland/typescript-vim'
+" Plugin 'magarcia/vim-angular2-snippets'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,7 +38,7 @@ filetype on
 au BufRead,BufNewFile *.go set filetype=go
 " au VimEnter *  NERDTree
 map <C-n> :NERDTreeToggle<CR>
-" map <C-t> :terminal<CR> "map for neovim
+" map <C-t> :terminal<CR>
 filetype plugin indent on
 :set incsearch
 :set hlsearch
@@ -65,8 +66,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_command = "goimports"
-
-let g:go_fmt_autosave = 0
 
 " For indentline
 " let g:indentLine_color_term = 239
