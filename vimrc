@@ -31,6 +31,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 :set number
+set encoding=utf-8           " Set default encoding to UTF-8"
 set guifont=Source\ Code\ Pro\ for\ Powerline\ "make sure to escape the spaces in the name properly"
 set encoding=utf-8
 set path+=**
@@ -66,6 +67,8 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
