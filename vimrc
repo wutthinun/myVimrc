@@ -23,6 +23,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/supertab'
 Plugin 'yggdroot/indentline'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'magarcia/vim-angular2-snippets'
 
 call vundle#end()            " required
@@ -54,8 +56,8 @@ nnoremap <C-L> <C-W><C-L>
 let mapleader=" "
 :set nowrap
 
-call arpeggio#map('n', '', 0, 'df', '<c-w>')
-call arpeggio#map('i', '', 0, 'df', '<c-w>')
+" call arpeggio#map('n', '', 0, 'df', '<c-w>')
+" call arpeggio#map('i', '', 0, 'df', '<c-w>')
 
 " set for GoLang
 let g:go_highlight_functions = 1
@@ -64,6 +66,12 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <Leader>s <Plug>(go-def-split)
+au FileType go nmap <Leader>v <Plug>(go-def-vertical)
 
 let g:go_fmt_command = "goimports"
 
@@ -75,4 +83,8 @@ let g:indentLine_char = '|'
 
 " For vim-airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+" For vim-airthemes
+let g:airline_theme='silver'
