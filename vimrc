@@ -92,4 +92,4 @@ set laststatus=2
 " let g:airline#extensions#tabline#enabled = 1
 
 " For vim-airthemes
-" let g:airline_theme='silver'
+let g:airline_theme='silver'
