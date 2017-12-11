@@ -25,6 +25,8 @@ Plugin 'yggdroot/indentline'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'posva/vim-vue'
 " Plugin 'magarcia/vim-angular2-snippets'
 
 call vundle#end()            " required
@@ -41,11 +43,10 @@ filetype on
 au BufRead,BufNewFile *.go set filetype=go
 " au VimEnter *  NERDTree
 map <C-n> :NERDTreeToggle<CR>
-" map <C-t> :terminal<CR>
 filetype plugin indent on
 :set incsearch
 :set hlsearch
-:set tabstop=4 shiftwidth=4 ""softtabstop=2 expandtab
+:set tabstop=2 shiftwidth=2 expandtab""softtabstop=2 expandtab
 nnoremap <CR> :noh<CR>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
@@ -56,6 +57,7 @@ nnoremap <C-L> <C-W><C-L>
 :set backspace=indent,eol,start
 let mapleader=" "
 :set nowrap
+let NERDTreeShowHidden=1
 
 " call arpeggio#map('n', '', 0, 'df', '<c-w>')
 " call arpeggio#map('i', '', 0, 'df', '<c-w>')
@@ -87,7 +89,7 @@ let g:indentLine_char = '|'
 " For vim-airline
 set laststatus=2
 " let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
 " For vim-airthemes
-let g:airline_theme='silver'
+" let g:airline_theme='silver'
