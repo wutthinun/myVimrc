@@ -27,12 +27,13 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'posva/vim-vue'
-" Plugin 'magarcia/vim-angular2-snippets'
+Plugin 'wincent/command-t'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 :set number
+:set relativenumber
 set encoding=utf-8           " Set default encoding to UTF-8"
 set guifont=Source\ Code\ Pro\ for\ Powerline\ "make sure to escape the spaces in the name properly"
 set encoding=utf-8
@@ -47,15 +48,20 @@ filetype plugin indent on
 :set incsearch
 :set hlsearch
 :set tabstop=2 shiftwidth=2 expandtab""softtabstop=2 expandtab
-nnoremap <CR> :noh<CR>
+
+" Remap key
+let mapleader=" "
+noremap <leader>q :q<cr>
+nnoremap <leader>s :w<cr>
+nnoremap <cr> :noh<cr>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
+
 :set cursorline
 " :set backspace=2 " make backspace work like most other apps
 :set backspace=indent,eol,start
-let mapleader=" "
 :set nowrap
 let NERDTreeShowHidden=1
 
@@ -93,3 +99,4 @@ set laststatus=2
 
 " For vim-airthemes
 let g:airline_theme='silver'
+
