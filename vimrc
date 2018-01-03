@@ -28,6 +28,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'posva/vim-vue'
 Plugin 'wincent/command-t'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,6 +41,12 @@ set encoding=utf-8
 set path+=**
 set wildmenu
 syntax on
+set background=dark
+if !has("gui_running")
+    let g:solarized_termtrans=1
+    let g:solarized_termcolors=256
+endif
+colorscheme solarized
 filetype on
 au BufRead,BufNewFile *.go set filetype=go
 " au VimEnter *  NERDTree
