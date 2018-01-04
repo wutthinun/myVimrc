@@ -1,45 +1,36 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'easymotion/vim-easymotion'
+Plug 'mattn/emmet-vim'
+Plug 'kana/vim-arpeggio'
+Plug 'jiangmiao/auto-pairs'
+Plug 'fatih/vim-go'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/syntastic'
+Plug 'ervandew/supertab'
+Plug 'yggdroot/indentline'
+Plug 'leafgarland/typescript-vim'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'posva/vim-vue'
+Plug 'wincent/command-t'
+Plug 'altercation/vim-colors-solarized'
+call plug#end()
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" let My Plugin
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'mattn/emmet-vim'
-Plugin 'kana/vim-arpeggio'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'ervandew/supertab'
-Plugin 'yggdroot/indentline'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'posva/vim-vue'
-Plugin 'wincent/command-t'
-Plugin 'altercation/vim-colors-solarized'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-:set number
-:set relativenumber
+set number
+set relativenumber
 set encoding=utf-8           " Set default encoding to UTF-8"
 set guifont=Source\ Code\ Pro\ for\ Powerline\ "make sure to escape the spaces in the name properly"
 set encoding=utf-8
 set path+=**
 set wildmenu
+set ignorecase
+set noswapfile
+set nobackup
 syntax on
 set background=dark
 if !has("gui_running")
