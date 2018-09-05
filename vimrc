@@ -32,7 +32,7 @@ set ignorecase
 set noswapfile
 set nobackup
 syntax on
-set background=dark
+set background=desert
 if !has("gui_running")
     let g:solarized_termtrans=1
     let g:solarized_termcolors=256
